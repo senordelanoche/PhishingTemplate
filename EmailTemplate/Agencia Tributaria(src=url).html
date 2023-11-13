@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad Social</title>
+  <style type="text/css">
+  
+  body{
+  background:white;
+  height:700px;
+  margin:0px;
+  padding:0px;
+    font-family:Arial;
+  color: black;
+
+}
+.container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; 
+      }
+.btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: center; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize;
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #f5d11a;
+        border-color: #f5d11a;
+        color: black; 
+      }
+.base{
+  position:absolute;
+  width:100%;
+  top:0px;
+  left:0px;
+  color:gray;
+
+}
+#logo{
+  
+  margin-top:20px;
+  
+  height:38px;
+  width:500px;
+}
+
+</style>
+</head>
+<body>
+  <div class="base">
+  <div id="logo">
+  <img src= "https://www.seg-social.es/wps/contenthandler/wss/!ut/p/digest!E5aQA06wBqRsvtaZ7B4stQ/war/POINThemeStatic/themes/Portal8.5/css/img/logo-institucional.png"/>
+  
+<img style="width: 70px;" src= "https://tramitaciondedocumentos.com/wp-content/uploads/2021/03/logo-agencia-tributaria.png"/>
+  </div>
+</br>
+  <font face="Arial" size="2" style="font-family:Arial; color:black;">
+<h2>Estimado {{.FirstName}} {{.LastName}},</h2>
+
+<p>Mediante el presente mensaje, le notificamos que la Agencia Tributaria ha detectado que tiene derecho a recibir un reembolso en referencia a sus impuestos correspondientes al ejercicio 2021.</p>
+<div style="background-color: #f5d11a">
+  <p>Importe: <b>113 €</b></p>
+  <p>Referencia: <b>ES-A80105W</b></p>
+</div>
+<div>
+  <p>Nuestro sistema de gestión de facturas ha establecido que tiene derecho a recibir este pago.</p>
+  <p>Para aceptar el pago en línea, acceda a su cuenta de la Agencia Tributaria en el siguiente enlace.</p>
+</div>
+
+ <table style="text-align:center; padding-left:170px; padding-right:80px;"role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="{{.URL}}" target="_blank">Iniciar Sesión</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+               <p>Por razones de seguridad y protección, tenga en cuenta que este documento web será temporalmente válido hasta el 12/02/2023.</p>
+</font>
+
+
+  <br aria-hidden="true">
+          <div>
+              <div style="margin:10px; background-color:rgb(255,255,255)">
+                <hr><font face="Arial" size="1" style="font-family:Arial; color:rgb(128,128,128)">
+                  <br aria-hidden="true">AVISO LEGAL, DE CONFIDENCIALIDAD Y RESPONSABILIDAD: El contenido de este mensaje de correo electrónico, incluidos los ficheros adjuntos, es confidencial y está protegido por el artículo 18.3 de la Constitución Española, que garantiza el secreto de las comunicaciones. Este correo está dirigido solo a la persona o entidad a la que se remite y puede contener material confidencial y/o privilegiado. Cualquier revisión no autorizada, uso, divulgación o distribución está prohibida. Si usted no es el destinatario, por favor, póngase en contacto con el remitente por correo electrónico de respuesta y destruya todas las copias del mensaje original. Si usted es el destinatario, pero no desea recibir comunicaciones a través de este medio, por favor, notifíquelo al remitente inmediatamente.<br aria-hidden="true"></font>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{{.Tracker}}</body>
+</html>
+        
+
+        
+
+
+  
